@@ -16,7 +16,7 @@ class DataBase:
 
     def connect(self):
         try:
-            self.dataB = mysql.connector.connect(host='localhost', user='ForYT', password='password')
+            self.dataB = mysql.connector.connect(host='localhost', user='Your_database_access_name', password='Your_database_password')
             self.cursor = self.dataB.cursor()
             self.cursor.execute('USE ytorganiserdb;')
             print("\n\nSuccessfully connected to Database")
